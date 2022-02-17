@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shunichi0402/MypageCreator/issues"
   },
-  "homepage": "https://github.com/shunichi0402/MypageCreator#readme"
+  "homepage": "https://github.com/shunichi0402/MypageCreator#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
