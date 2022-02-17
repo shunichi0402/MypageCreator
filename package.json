@@ -1,0 +1,19 @@
+{
+  "name": "mypage_creator",
+  "version": "0.1.0",
+  "description": "nodejsベースで作成されたホームページ作成システム",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shunichi0402/MypageCreator.git"
+  },
+  "author": "shunichi0402",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shunichi0402/MypageCreator/issues"
+  },
+  "homepage": "https://github.com/shunichi0402/MypageCreator#readme"
+}
