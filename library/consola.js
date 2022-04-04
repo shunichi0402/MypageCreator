@@ -54,6 +54,14 @@ const consola = {
         magenta: '\u001b[45m',
         cyan: '\u001b[46m',
         white: '\u001b[47m'
+    },
+    
+    success : (msg) => {
+        this.log(msg, this.color.green);
+    },
+
+    error : (msg) => {
+        this.log(msg, this.color.white, this.background.red);
     }
 }
 
