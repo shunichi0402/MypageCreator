@@ -3,4 +3,4 @@ const server = new Server();
 const consola = require('./library/consola');
 
 server.start()
-.then( port => consola.success(`Server listen at port${port}...`));
+.then( a => consola.success(`Server listen at port${a}...`));

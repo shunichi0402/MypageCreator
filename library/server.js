@@ -1,6 +1,7 @@
 const express = require('express');
 const configs = require('../configs/server_config');
 
+
 class MainServer{
     constructor(){
         this.app = express();
@@ -14,9 +15,8 @@ class MainServer{
     }
 
     async start(){
-        this.http.listen(this.port, () => {
-            return this.port;
-        });
+        await this.http.listen(this.port);
+        return this.port;
     }
 }
 
