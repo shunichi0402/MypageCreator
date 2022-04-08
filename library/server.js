@@ -21,11 +21,13 @@ class MainServer{
         // Add randering pages rooting
 
         // static asset
-        this.app.use(express.static(path.join(mainPath, 'static')));
+        const staticPath = path.join(mainPath, 'static');
+        this.app.use(express.static(staticPath));
 
         // 404 page
         this.app.use((res, req) => {
-            res.status(404).render(path.join(mainPath, 'page', 'notfound'), {})
+            const notfoundPath = path.join(mainPath, 'page', 'notfound')
+            res.status(404).render(notfoundPath, {});
         });
     }
 
