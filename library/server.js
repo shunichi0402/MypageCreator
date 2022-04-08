@@ -6,7 +6,7 @@ class MainServer{
         this.app = express();
         this.http = require('http').Server(this.app);
         this.port = configs.port;
-        serverInit();
+        this.serverInit();
     }
 
     serverInit(){

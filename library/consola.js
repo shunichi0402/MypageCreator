@@ -56,11 +56,11 @@ const consola = {
         white: '\u001b[47m'
     },
     
-    success : (msg) => {
+    success : function (msg){
         this.log(msg, this.color.green);
     },
 
-    error : (msg) => {
+    error: function (msg){
         this.log(msg, this.color.white, this.background.red);
     }
 }
