@@ -6,6 +6,11 @@ class MainServer{
         this.app = express();
         this.http = require('http').Server(this.app);
         this.port = configs.port;
+        serverInit();
+    }
+
+    serverInit(){
+        this.app.set("view engine", "ejs");
     }
 
     async start(){
